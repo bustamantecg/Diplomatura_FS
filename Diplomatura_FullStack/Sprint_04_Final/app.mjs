@@ -26,9 +26,9 @@ app.set('layout', 'layout'); // archivo Base de layout
 // Middleware para agregar navbarLinks
 app.use((req, res, next) => {
   res.locals.navbarLinks = [
-    { text: 'NB_Inicio', href: '/', icon: '/icons/home.svg' },
-    { text: 'NB_Acerca De', href: '/about', icon: '/icons/info.svg' },
-    { text: 'NB_Contacto', href: '/contact', icon: '/icons/contact.svg' }
+    { text: 'Inicio', href: '/', icon: '/icons/home.svg' },
+    { text: 'Acerca De', href: '/about', icon: '/icons/info.svg' },
+    { text: 'Contacto', href: '/contact', icon: '/icons/contact.svg' }
   ];
   next();
 });
